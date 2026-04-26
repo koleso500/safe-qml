@@ -1,0 +1,60 @@
+# Paths
+paths:
+  data_dir: "data/Brain_Cancer"
+  csv_dir: "tables"
+  fig_dir: "figures"
+  fig_text_dir: 'figures_text'
+  fig_hmda_dir: 'figures_hmda'
+
+# Reproducibility
+seed: 42
+
+# Data Preprocessing
+data:
+  img_size: 224
+  batch_size_images: 64
+
+# Cross-validation
+cross_validation:
+  n_splits: 2
+
+# Training
+training:
+  epochs: 20
+  batch_size: 32
+  learning_rate: 0.003
+
+# Quantum Model
+quantum:
+  n_qubits: 9
+  n_layers: 1
+
+# SAFE AI Metrics
+safe:
+  batch_size_safe: 64
+
+  rga:
+    n_segments: 10
+
+  rgr:
+    noise_start: 0.0
+    noise_end: 3.0
+    noise_step: 0.3
+
+  rge:
+    removal_start: 0.0
+    removal_end: 1.0
+    removal_step: 0.1
+    patch_size: 32
+
+# GradCAM
+gradcam:
+  epochs: 10
+  learning_rate: 0.001
+  batch_size: 64
+
+hmda:
+  raw_csv: C:/Users/koles/Desktop/safe-ai-metrics-integrated/data/raw/hmda_2017_ny_all-records_labels.csv
+  target: 'action_taken'
+  create_sample: True
+  sample_fraction: 0.1
