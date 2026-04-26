@@ -1,6 +1,6 @@
 # SAFE Quantum Machine Learning with Variational Quantum Classifiers
 
-Code for the paper **"SAFE Quantum Machine Learning with Variational Quantum Classifiers"** (under review at ICML 2026).
+Code for the paper **"SAFE Quantum Machine Learning with Variational Quantum Classifiers"**.
 
 ---
 
@@ -129,8 +129,3 @@ Core parameters are configured in `config.yaml`. Some key defaults:
 ## Reproducibility
 
 All experiments use fixed random seed (`SEED = 42`) for NumPy, PyTorch and SAFE-AI perturbations.
-
----
-
-
-**Status:** Preliminary research code under review at ICML 2026. Don't distribute

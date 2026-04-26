@@ -16,7 +16,7 @@ data:
 
 # Cross-validation
 cross_validation:
-  n_splits: 2
+  n_splits: 5
 
 # Training
 training:
