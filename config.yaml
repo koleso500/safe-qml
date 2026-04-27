@@ -52,9 +52,3 @@ gradcam:
   epochs: 10
   learning_rate: 0.001
   batch_size: 64
-
-hmda:
-  raw_csv: C:/Users/koles/Desktop/safe-ai-metrics-integrated/data/raw/hmda_2017_ny_all-records_labels.csv
-  target: 'action_taken'
-  create_sample: True
-  sample_fraction: 0.1
